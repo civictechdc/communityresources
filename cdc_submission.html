@@ -28,18 +28,15 @@
 <section>
         
 <h3>Are there Community Services where there is Poverty?</h3>
-<img src="http://ling-dev.nfshost.com/communityresources/img/cdc_submission.png"/>
+<img src="img/cdc_submission.png"/>
 <br>
 <br>
-<p>Using the 2012 CPS data for household size and income,
-we estimated the poverty rate per geographic region (MSA) for the largest cities
-based on the federal poverty guidelines (e.g. $23,050 income threshold for a household of 4).
-We compared this to the presence of community workers (most of the BLS O*NET occupations under 'Community and Social Service Occupations'),
-as defined and measured by the Bureau of Labor Statistics (BLS).  </p>
+<p>The primary objective of our project is the development of an open, interoperable directory of community resources, such as health and social service agencies. This first entails the integration of multiple different sources of data (including federal 990 data, 2-1-1 referral data, and local service agencies' own internal directories) -- which we have already accomplished. We need funding to develop institutional capacity to facilitate the use of this database over time, for which we are seeking seed funding from sources like this challenge. </p>
+<p>We analyzed CPS data to explore the correspondence between social service providers and poverty levels. Using the 2012 CPS household size and income data, we estimated the poverty rate per geographic region (MSA) for the largest cities based on the federal poverty guidelines (e.g. $23,050 income threshold for a household of 4). We compared this to the presence of "community workers" (defined to include most of the BLS O*NET occupations under "Community and Social Service Occupations"). We used R to convert the SPSS files to csv format, and used Python to combine the BLS and CPS data based on MSA names. We cleaned some MSA names in the CPS data, since some were not standardized, and there was no MSA (or FIPS) ID provided.</p>
 
-<p>There are about 1.9M people employed nationally in community and social service occupations, including all types of counselors and social workers. About a quarter (260K) work for local and state governments, and 190K in schools. The BLS data provides more depth into these occupations, which we can utilize in the future.</p>
+<p>We found a mismatch between areas of poverty, and density of community workers. In Dallas, LA, and Miami, with poverty rates > 15%, there are over 60 people in poverty per community worker while Boston, Philadelphia, and Seattle, with poverty rates < 15%, have less than 25. Additionally, In analyzing DC service directories, we found around 600 non-profit organizations and between 1500 and 2000 programs serving low income DC residents. This indicates that a service program density of one program per 50-100 people among the 20% or so of DC's population struggling with poverty.</p>
 
-<p>We found a mismatch between areas of poverty, and density of community workers. In Dallas, LA, and Miami, there are over 60 people in poverty per community worker. In Boston, Philadelphia, and Seattle, there are less than 25. There is an inverse relationship between the density (either by % of population, or % of employed) of community workers and potential people in need. We're not sure how much of this is due to budgetary limitations, but this shows great opportunity for a resource directory to identify and target the regional mismatches.</p>
+<p>These analyses show an inverse relationship between service density and potential people in need. Our initial efforts with the CPS and DC provider data indicates that the challenge of finding information about resources appears to be universally shared among service providers and residents themselves. We would like investigate the impact of budgetary limitations in these MSAs and believe there is great opportunity for a resource directory to identify and target such regional mismatches. The need for viable systems of information and referral is acute, and technological solutions lag dramatically behind similar challenges in other fields.</p>
 
       </section>
       <footer>
